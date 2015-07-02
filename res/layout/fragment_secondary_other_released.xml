@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/id_fragment_secondary_other_released_tt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pull_mainpage_title"
+        android:gravity="center"
+        android:text="@string/other_no_released"
+        android:textColor="@color/refresh_color"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <com.zb.secondary_market.pulltorefresh.PullToRefreshGridView_1
+        xmlns:ptr="http://schemas.android.com/apk/res/com.zb.secondary_market.pulltorefresh"
+        android:id="@+id/id_fragment_secondary_other_released_tt_pull_refresh_gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pull_mainpage_title"
+        android:gravity="center"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth" />
+
+</RelativeLayout>

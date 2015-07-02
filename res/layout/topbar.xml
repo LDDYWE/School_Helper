@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_topbar_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/titleview_image_leftbutton"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp" 
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- <ImageButton
+        android:id="@+id/titleview_image_titlebutton"
+        android:layout_width="0dip"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp" 
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/> -->
+        
+    
+    <TextView
+        android:id="@+id/titleview_titletext"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    
+    <ImageButton
+        android:id="@+id/titleview_image_rightbutton"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp" 
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+    
+
+</LinearLayout>

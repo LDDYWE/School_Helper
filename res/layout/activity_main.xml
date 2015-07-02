@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jonny="http://schemas.android.com/apk/res/com.zb.secondary_market"
+    android:id="@+id/mainrelativelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/menu_background" >
+
+    <com.zb.secondary_market.custom.SlidingMenu
+        android:id="@+id/id_slidemenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        jonny:rightPadding="80dp" >
+
+        <LinearLayout
+            android:id="@+id/id_slidemenu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <include layout="@layout/left_menu" />
+
+            <Button
+                android:id="@+id/id_switch_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toggleMenu"
+                android:text="切换菜单"
+                android:textSize="10sp" />
+
+            <!-- <include layout="@layout/main_test" /> -->
+
+            <FrameLayout
+                android:id="@+id/id_mainframelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </FrameLayout>
+
+            <!-- <LinearLayout
+                android:id="@+id/id_contentLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@+id/realtabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="11" />
+
+                <android.support.v4.app.FragmentTabHost
+                    android:id="@android:id/tabhost"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_toolbar_bg_black" >
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0" />
+                </android.support.v4.app.FragmentTabHost>
+            </LinearLayout> -->
+        </LinearLayout>
+    </com.zb.secondary_market.custom.SlidingMenu>
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.zb.secondary_market.custom.TitleView
+        android:id="@+id/id_my_message_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/id_my_message_rg"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/id_my_message_title"
+        android:gravity="center"
+        android:background="@color/zhihu_title"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/id_my_message_rg_btn1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/zhihu_title"
+             android:layout_marginTop="5dp"
+            android:text="二手"
+            android:textColor="@color/color_radio_button"
+            android:textSize="16dp"
+            android:button="@null"
+            android:checked="true" />
+
+        <!-- <View
+            android:id="@+id/id_my_message_rg_line1"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black" /> -->
+
+        <!-- <RadioButton
+            android:id="@+id/id_my_message_rg_btn2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="已交易"
+            android:textColor="@color/color_radio_button"
+            android:textSize="15dp" /> -->
+
+        <!-- <View
+            android:id="@+id/id_my_message_rg_line2"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black" /> -->
+
+        <RadioButton
+            android:id="@+id/id_my_message_rg_btn2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:background="@color/zhihu_title"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+             android:layout_marginTop="5dp"
+            android:text="交友"
+            android:button="@null"
+            android:textColor="@color/color_radio_button"
+            android:textSize="16dp" />
+        
+        <!-- <View
+            android:id="@+id/id_my_message_rg_line3"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black" /> -->
+
+        <RadioButton
+            android:id="@+id/id_my_message_rg_btn3"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:background="@color/zhihu_title"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="活动"
+            android:button="@null"
+            android:textColor="@color/color_radio_button"
+            android:textSize="16dp" />
+    </RadioGroup>
+
+    <!-- <View
+        android:id="@+id/id_my_message_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/id_my_message_rg"
+        android:background="@color/black" /> -->
+
+    <FrameLayout
+        android:id="@+id/id_my_message_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_my_message_rg" >
+    </FrameLayout>
+
+</RelativeLayout>

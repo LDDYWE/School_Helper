@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_livefragement"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5" >
+
+    <!-- <com.zb.secondary_market.custom.TitleView
+        android:id="@+id/pull_friend_mainpage_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" /> -->
+
+    <TextView
+        android:id="@+id/pull_null_text_friend_mainpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pull_friend_mainpage_title"
+        android:gravity="center"
+        android:text="@string/content_refresh"
+        android:textColor="@color/refresh_color"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <com.zb.secondary_market.pulltorefresh.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res/com.zb.secondary_market.pulltorefresh"
+        android:id="@+id/pull_refresh_list_friend_mainpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pull_friend_mainpage_title"
+        android:gravity="center"
+        android:scrollbars="none" />
+
+</RelativeLayout>

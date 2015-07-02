@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_bottombar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <LinearLayout 
+        android:id="@+id/id_ll_mainpage"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        android:orientation="vertical">
+        
+    <ImageButton 
+        android:id="@+id/id_mainpage_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+		android:layout_weight="2"        
+        />
+    
+    <TextView
+        android:id="@+id/id_mainpage_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:text="Home"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/id_ll_assortment"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        android:orientation="vertical">
+    
+    <ImageButton 
+        android:id="@+id/id_assortment_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        />
+    
+    <TextView
+        android:id="@+id/id_assortment_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:text="Assortment"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/id_ll_release"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        android:orientation="vertical">
+    
+    <ImageButton 
+        android:id="@+id/id_release_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        />
+    
+    <TextView
+        android:id="@+id/id_release_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:text="Release"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/id_ll_discover"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        android:orientation="vertical">
+    <ImageButton 
+        android:id="@+id/id_discover_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        />
+    
+        <TextView
+        android:id="@+id/id_discover_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:text="Discover"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/id_ll_me"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        android:orientation="vertical">
+    <ImageButton 
+        android:id="@+id/id_me_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        />
+    <TextView
+        android:id="@+id/id_me_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:text="Me"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.zb.secondary_market.custom.TitleView
+        android:id="@+id/photograph_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/id_photograph_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/id_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#ffffff" >
+
+            <LinearLayout
+                android:id="@+id/id_photograph_scrollview_ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#CCCCCC"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/id_photograph_scrollview_ll1_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/nav_logo" />
+
+                <TextView
+                    android:id="@+id/id_photograph_scrollview_ll1_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="只支持发布品牌商品，若发现非正品将会被下架，由此引发的纠纷自行承担。" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/id_photograph_scrollview_line1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/id_photograph_scrollview_ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/id_photograph_scrollview_ll2_titleName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="标题"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/id_photograph_scrollview_ll2_title"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:hint="商品标题，最多40个字"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/id_photograph_scrollview_line2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/id_photograph_scrollview_ll3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/id_photograph_scrollview_ll3_priceName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="价格"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/id_photograph_scrollview_ll3_price"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="必填"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/id_photograph_scrollview_ll3_priceUnit"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="元"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/id_photograph_scrollview_line3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/id_photograph_scrollview_ll4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/id_photograph_scrollview_ll4_originalpriceName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="原价"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/id_photograph_scrollview_ll4_originalprice"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="选填"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/id_photograph_scrollview_ll4_originalpriceUnit"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="元"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/id_photograph_scrollview_line4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/id_photograph_scrollview_ll5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/id_photograph_scrollview_ll5_detailName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="描述"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/id_photograph_scrollview_ll5_detail"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:hint="商品规格、新旧程度、存在问题、到手时间、适用条件、商品故事、有无发票或购物凭证等。"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

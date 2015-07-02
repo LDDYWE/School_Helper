@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_livefragement"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/momo" >
+
+    <TextView 
+        android:id="@+id/pull_null_text_friend_my_message"
+	      android:layout_width="match_parent"
+	      android:layout_height="match_parent"
+	      android:textColor="@color/refresh_color"
+	      android:textSize="20sp"
+	      android:layout_below="@+id/pull_friend_my_message_title"
+	      android:gravity="center"
+	      android:text="您还没有和别人聊过天哦^_^"
+	      android:visibility="gone"/>
+    
+    <ListView
+        android:id="@+id/pull_refresh_list_friend_my_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pull_friend_my_message_title"
+        android:gravity="center"
+        android:dividerPadding="10dp"
+        android:scrollbars="none" />
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.zb.secondary_market.custom.TitleView
+        android:id="@+id/id_detail_content_title_temporary"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <ScrollView
+        android:id="@+id/id_detail_content_scrollview_temporary"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="11"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:id="@+id/id_detail_content_ll_temporary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/id_detail_content_ll_ll1_temporary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/id_detail_content_ll_ll1_name_temporary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="求购16GB蓝色版魅蓝一部"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/id_detail_content_ll_ll1_place_temporary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="科大"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/id_detail_content_ll_ll1_view_temporary"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#AAAAAA" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_detail_content_ll_ll2_temporary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/id_detail_content_ll_ll2_author_temporary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="monse"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/id_detail_content_ll_ll2_content_ll_temporary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/corner_shape_discription"
+                    android:orientation="vertical" >
+
+                    <!-- <TextView
+                        android:id="@+id/id_detail_content_ll_ll2_content_ll_address_temporary"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:autoLink="all"
+                        android:text="address" /> -->
+
+                    <TextView
+                        android:id="@+id/id_detail_content_ll_ll2_content_ll_detail_temporary"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="12dp"
+                        android:lines="50"
+                        android:lineSpacingExtra="2dp"
+                        android:autoLink="all"
+                        android:text="detail"
+                        android:textSize="15dp" />
+
+                    <!-- <TextView
+                        android:id="@+id/id_detail_content_ll_ll2_content_ll_source_temporary"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:autoLink="all"
+                        android:text="source" /> -->
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

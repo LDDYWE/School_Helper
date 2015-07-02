@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:id="@+id/frame_content_temperary_school"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frameLayout1_temperary_school"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout1_temperary_school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/menu_icon_background" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal" >
+
+            <FrameLayout
+                android:id="@+id/layout_notice_temperary_school"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/image_notice_temperary_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="1.0dip"
+                    android:src="@drawable/tab_mainpage_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6.0dip"
+                    android:text="通知"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/layout_conference_temperary_school"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/image_conference_temperary_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="1.0dip"
+                    android:src="@drawable/tab_assortment_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6.0dip"
+                    android:text="会议"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/layout_activity_temperary_school"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/image_activity_temperary_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="1.0dip"
+                    android:src="@drawable/tab_discover_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6.0dip"
+                    android:text="活动"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+            </FrameLayout>
+
+            <!-- <FrameLayout
+                android:id="@+id/layout_me_temperary_school"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/image_me_temperary_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="1.0dip"
+                    android:src="@drawable/tab_me_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6.0dip"
+                    android:text="我的"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+            </FrameLayout> -->
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

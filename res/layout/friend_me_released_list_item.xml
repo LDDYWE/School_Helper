@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/momo"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/id_ll_content_list_friend_me_released"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@color/momo"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/id_fragment_assortment_variety_listview_item_image_friend_me_released"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="2"
+            android:scaleType="fitXY"
+            android:src="@drawable/aa" />
+
+        <LinearLayout
+            android:id="@+id/id_fragment_assortment_variety_listview_item_ll_friend_me_released"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/id_fragment_assortment_variety_listview_item_ll_ll0_friend_me_released"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/id_fragment_assortment_variety_listview_item_ll_ll0_title_friend_me_released"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="标题"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_fragment_assortment_variety_listview_item_ll_ll1_friend_me_released"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout 
+                    android:id="@+id/id_fragment_assortment_variety_listview_item_ll_ll1_friend_me_released_name_gender"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    >
+                
+                <TextView
+                    android:id="@+id/id_fragment_assortment_variety_listview_item_ll_ll1_nickname_friend_me_released"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="iphone5"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+                
+                <ImageView android:id="@+id/id_fragment_assortment_variety_listview_item_ll_ll2_ll1_sex_friend_me_released"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="5dp"/>
+                
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/id_fragment_assortment_variety_listview_item_ll_ll1_datetime_friend_me_released"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="2015-4-15"
+                    android:gravity="center"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_fragment_assortment_variety_listview_item_ll_ll2_friend_me_released"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" >
+
+                <!-- <LinearLayout
+                    android:id="@+id/id_fragment_assortment_variety_listview_item_ll_ll2_ll1_friend_me_released"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/corner_shape3" >
+
+                    <TextView
+                        android:id="@+id/id_fragment_assortment_variety_listview_item_ll_ll2_ll1_sex_friend_me_released"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="性别"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+                </LinearLayout> -->
+
+                <LinearLayout
+                    android:id="@+id/id_fragment_assortment_variety_listview_item_ll_ll2_ll2_friend_me_released"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                            android:id="@+id/id_personal_setting_info_ll_ll1_gps_ll_icon"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/dingwei" />
+                    
+                    <TextView
+                        android:id="@+id/id_fragment_assortment_variety_listview_item_ll_ll2_ll2_school_friend_me_released"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="2dp"
+                        android:text="认证"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_fragment_assortment_variety_listview_item_ll_ll3_friend_me_released"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/id_fragment_assortment_variety_listview_item_ll_ll3_declaration_friend_me_released"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="爱情宣言"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.zb.secondary_market.custom.TitleView
+        android:id="@+id/id_secondary_me_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- <RadioGroup
+        android:id="@+id/id_secondary_me_rg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/id_secondary_me_title"
+        android:gravity="center"
+        android:background="@color/color_bg_normal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/id_secondary_me_rg_btn1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="已发布"
+            android:textColor="@color/color_radio_button"
+            android:textSize="15dp"
+            android:checked="true" />
+
+        <View
+            android:id="@+id/id_secondary_me_rg_line1"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black" />
+
+        <RadioButton
+            android:id="@+id/id_secondary_me_rg_btn2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="已交易"
+            android:textColor="@color/color_radio_button"
+            android:textSize="15dp" />
+
+        <View
+            android:id="@+id/id_secondary_me_rg_line2"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black" />
+
+        <RadioButton
+            android:id="@+id/id_secondary_me_rg_btn2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="消息"
+            android:textColor="@color/color_radio_button"
+            android:textSize="15dp" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/id_secondary_me_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/id_secondary_me_rg"
+        android:background="@color/black" /> -->
+
+    <FrameLayout
+        android:id="@+id/id_secondary_me_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_secondary_me_title" >
+    </FrameLayout>
+
+</RelativeLayout>

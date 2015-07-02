@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.zb.secondary_market.custom.TitleView 
+        android:id="@+id/id_imessage_title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/chat_bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tactile_black_title"
+        android:orientation="horizontal"
+        android:paddingBottom="3dip"
+        android:paddingTop="7dip" >
+
+        <ImageButton
+            android:id="@+id/chat_bottom_look1"
+            android:layout_width="match_parent"
+            android:layout_height="26dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginTop="3dip"
+            android:layout_weight="3.5"
+            android:background="@drawable/mainpage_white_micro" />
+
+        <ImageButton
+            android:id="@+id/chat_bottom_add"
+            android:layout_width="match_parent"
+            android:layout_height="26dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginTop="3dip"
+            android:layout_weight="3.5"
+            android:background="@drawable/me_white_micro" />
+
+        <EditText
+            android:id="@+id/chat_bottom_edittext1"
+            android:layout_width="match_parent"
+            android:layout_height="32dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="7dip"
+            android:layout_weight="1.5" />
+
+        <Button
+            android:id="@+id/chat_bottom_sendbutton"
+            android:layout_width="match_parent"
+            android:layout_height="26dip"
+            android:layout_marginBottom="3dip"
+            android:layout_marginRight="4dip"
+            android:layout_weight="3.2"
+            android:text="发送"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/chat_list1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/chat_bottom_linear"
+        android:layout_below="@id/id_imessage_title1"
+        android:background="#f0f0f0"
+        android:divider="#aaaaaa"
+        android:dividerHeight="0px"
+        android:fadingEdge="none" >
+    </ListView>
+
+</RelativeLayout>

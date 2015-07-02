@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <com.zb.secondary_market.camera.ViewPagerFixed
+        android:id="@+id/guide_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/plugin_camera_black"
+        android:unselectedAlpha="1" >
+    </com.zb.secondary_market.camera.ViewPagerFixed>
+    
+    <LinearLayout
+        android:id="@+id/guide_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24.0dip"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/guide_open"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/guide_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/corner_shape111111"
+        android:clickable="true"
+        android:text="点击进入(1.1)"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>

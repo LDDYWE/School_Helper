@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.zb.secondary_market.custom.TitleView
+        android:id="@+id/id_imessage_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+    
+    <!-- <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="0dip"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="@string/sendto"/>
+	    <EditText android:id="@+id/send_usr"
+	        android:layout_width="0dip"
+	        android:layout_weight="2"
+	        android:text="hanmeimei"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/name"/>
+	    <TextView 
+	        android:layout_width="0dip"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="@string/message"/>
+	    <EditText android:id="@+id/send_msg"
+	        android:layout_width="0dip"
+	        android:layout_weight="4"
+	        android:layout_height="wrap_content"
+	        android:text="@string/hello_world"
+	        android:hint="@string/hello_world"/>
+	    <Button android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/btn_send"
+	        android:paddingLeft="10dip"
+	        android:onClick="sendMessage"/>
+	</LinearLayout> -->
+	
+	<LinearLayout
+        android:id="@+id/chat_bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/zhihu_title"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dip"
+        android:paddingTop="7dip" >
+        
+	    <!-- android:background="@drawable/tactile_black_title" -->
+
+        <ImageButton
+            android:id="@+id/chat_bottom_look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/mainpage_white_micro" />
+
+        <LinearLayout 
+            android:id="@+id/chat_bottom_edittext_ll"
+            android:layout_width="0dip"
+            android:layout_weight="15"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/corner_shape11">
+        
+        <EditText
+            android:id="@+id/chat_bottom_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:textColor="@color/black"
+            android:background="@null" />
+        
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/chat_bottom_sendbutton"
+            android:layout_width="0dip"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dip"
+            android:text="发送"
+            android:textSize="15sp"
+            android:background="@null"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+	
+	 <ListView
+        android:id="@+id/chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/chat_bottom_linear"
+        android:layout_below="@id/id_imessage_title"
+        android:background="@color/momo"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:divider="#aaaaaa"
+        android:dividerHeight="0px"
+        android:fadingEdge="none" >
+    </ListView>
+	
+</RelativeLayout>

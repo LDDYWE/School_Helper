@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:id="@+id/frame_content_temperary_work"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frameLayout1_temperary_work"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout1_temperary_work"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/tactile_black_title" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal" >
+
+            <FrameLayout
+                android:id="@+id/layout_recruit_temperary_work"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/image_recruit_temperary_work"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="1.0dip"
+                    android:src="@drawable/tab_mainpage_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6.0dip"
+                    android:text="招聘"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/layout_intern_temperary_work"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/image_intern_temperary_work"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="1.0dip"
+                    android:src="@drawable/tab_assortment_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6.0dip"
+                    android:text="实习"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/layout_parttime_temperary_work"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/image_parttime_temperary_work"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="1.0dip"
+                    android:src="@drawable/tab_discover_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6.0dip"
+                    android:text="兼职"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+            </FrameLayout>
+
+            <!-- <FrameLayout
+                android:id="@+id/layout_me_temperary_work"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/image_me_temperary_work"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="1.0dip"
+                    android:src="@drawable/tab_me_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6.0dip"
+                    android:text="我的"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+            </FrameLayout> -->
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

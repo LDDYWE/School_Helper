@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent_lightgray" >
+
+    <LinearLayout 
+        android:id="@+id/id_popupwindow_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        
+    <LinearLayout
+        android:id="@+id/id_popupwindow_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/corner_shape_popup"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/id_popupwindow_ll1_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="选择照片来源"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/id_popupwindow_ll1_btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="立即拍照"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/id_popupwindow_ll1_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="相册"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/id_popupwindow_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/corner_shape_popup"
+        android:layout_below="@id/id_popupwindow_ll1"
+        android:gravity="center"
+        >
+        
+        <Button 
+            android:id="@+id/id_popupwindow_ll2_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="取消"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    </LinearLayout>
+	
+</RelativeLayout>

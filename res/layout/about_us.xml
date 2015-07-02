@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent">
+        
+       <com.zb.secondary_market.custom.TitleView
+        android:id="@+id/mineabout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+       <ScrollView 
+          android:layout_width="fill_parent"
+          android:layout_height="match_parent"
+          android:background="@color/white" >
+        <LinearLayout 
+            android:orientation="vertical"
+            android:id="@+id/mineabout_content"
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content">
+            
+            <TextView 
+                android:id="@+id/mine_about_rjjj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="软件简介"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:id="@+id/mine_about_rjjj_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="15dp" 
+                android:src="@drawable/ic_launcher"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"/>
+            <TextView 
+                android:id="@+id/mine_about_textversion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:text="版本"
+                android:textSize="16sp"
+                android:textColor="@color/gray"/>
+            <TextView 
+                android:id="@+id/mine_about_textbrief"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="简介"
+                android:textSize="18sp"
+                android:textColor="@color/gray"/>
+            <TextView 
+                android:id="@+id/mine_about_bqss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="版权所属"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:id="@+id/mine_about_bqss_img"
+                android:layout_width="120dp"
+                android:layout_height="115dp"
+                android:src="@drawable/haichen"
+                android:layout_marginTop="15dp" 
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"/>
+            <TextView 
+                android:id="@+id/mineabout_bqss_con"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="合肥海晨网络科技有限公司"
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginTop="15dp" 
+                android:layout_marginBottom="15dp"/>
+            
+            <TextView 
+                android:id="@+id/mine_about_lxwm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="联系我们"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <TextView 
+                android:id="@+id/mineabout_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="反馈：hic158@163.com"
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginTop="15dp" 
+                android:layout_marginBottom="15dp"/>
+        </LinearLayout>          
+    </ScrollView>   
+
+        
+</LinearLayout>

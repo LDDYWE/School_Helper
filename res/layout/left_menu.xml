@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zhihu_title"
+     >
+     
+    <!-- android:background="@drawable/menu_background1" -->
+
+    <!--
+         <com.zb.secondary_market.custom.TitleView
+        android:id="@+id/id_leftMenu_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    -->
+
+    <LinearLayout
+        android:id="@+id/id_leftMenu_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.zb.secondary_market.custom.CircularImageView
+            android:id="@+id/id_personal_setting_info_ll_photo_leftMenu"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:id="@+id/id_leftMenu_ll_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/id_leftMenu_ll_ll_t1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="赵斌"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <!-- <TextView
+                android:id="@+id/id_leftMenu_ll_ll_t2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="478230548"
+                android:textColor="@color/white" /> -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- <View
+        android:id="@+id/id_view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/id_leftMenu_ll"
+        android:background="@color/gray" /> -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/id_leftMenu_ll"
+        android:background="@color/white"
+         >
+        
+        <!-- android:background="#313131" -->
+
+        <RelativeLayout
+            android:id="@+id/id_secondarylayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_category_item"
+            android:clickable="true" >
+            
+            <!-- android:background="@drawable/selector_category_item" -->
+
+            <ImageView
+                android:id="@+id/id_img01"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/img_005" />
+
+            <TextView
+                android:id="@+id/id_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/id_img01"
+                android:text="跳蚤市场"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_friendlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_category_item"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/id_img02"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/img_002" />
+
+            <TextView
+                android:id="@+id/id_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/id_img02"
+                android:text="校园交友"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_activitylayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_category_item"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/id_img03"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/img_003" />
+
+            <TextView
+                android:id="@+id/id_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/id_img03"
+                android:text="活动发起"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_worklayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_category_item"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/id_img04"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/img_004" />
+
+            <TextView
+                android:id="@+id/id_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/id_img04"
+                android:text="工作招聘"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_schoollayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_category_item"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/id_img05"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/img_001" />
+
+            <TextView
+                android:id="@+id/id_text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/id_img05"
+                android:text="校园通知"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <!-- <RelativeLayout
+            android:id="@+id/id_settinglayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_category_item"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/id_img05"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/img_5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/id_img05"
+                android:text="系统设置"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </RelativeLayout> -->
+    </LinearLayout>
+
+</RelativeLayout>

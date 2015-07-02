@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zb.secondary_market"
+    android:versionCode="1"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <receiver android:name="NetCheckReceiver" >
+        <intent-filter>
+            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+        </intent-filter>
+    </receiver>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bbbb"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="7htDEzzcBpYyGZH1SNrmEkww" />
+
+        <activity
+            android:name=".Guide_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Secondary_Activity_LinShi"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Welcome_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Campaigner_Image_Detail_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MMMMMActivity"
+            android:screenOrientation="portrait" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".Secondary_Other_Released_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Friend_Other_Released_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Campaigner_Other_Released_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".My_Released_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AboutUs_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".My_Message_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Secondary_Imessage_Activity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Friend_Imessage_Activity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Campaigner_Imessage_Activity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Content_Detail_Campaigner_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Content_Detail_Friend_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Campaigner_PhotoGraph_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ImageFileActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ImageFileSecondaryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ImageFileFriendActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ImageFileCampaignerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Campaigner_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AlbumSecondaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AlbumFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AlbumCampaignerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GallerySecondaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GalleryFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GalleryCampaignerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShowAllPhotoSecondaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShowAllPhotoFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShowAllPhotoCampaignerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Register_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".MainActivity1"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Secondary_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Friend_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Work_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".School_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Personal_Setting_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Jump_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Type_Detail_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Content_Detail_Secondary_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ViewPager_ImageDisplay_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Secondary_PhotoGraph_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Friend_PhotoGraph_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Content_Detail_Temporary_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Content_Detail_Work_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Content_Detail_School_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Secondary_Me_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Friend_Me_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Campaigner_Me_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.zb.secondary_market.service.ImessageService"
+            android:enabled="true" >
+            <intent-filter>
+
+                <!--
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+                -->
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

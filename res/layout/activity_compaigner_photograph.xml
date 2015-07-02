@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.zb.secondary_market.custom.TitleView
+        android:id="@+id/compaigner_photograph_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/id_compaigner_photograph_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/compaigner_photograph_title"
+        android:layout_above="@+id/id_compaigner_photograph_scrollview_submmit_btn" >
+
+        <LinearLayout
+            android:id="@+id/id_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/id_compaigner_photograph_scrollview_ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#CCCCCC"
+                android:orientation="vertical" >
+
+                <GridView
+                    android:id="@+id/id_compaigner_photograph_scrollview_ll1_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="3dp"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:layout_margin="2dp"
+                    android:verticalSpacing="5dp" >
+                </GridView>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/id_compaigner_photograph_scrollview_line1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/id_compaigner_photograph_scrollview_ll2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/id_compaigner_photograph_scrollview_ll2_titleName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="标题"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/id_compaigner_photograph_scrollview_ll2_title"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:hint="示例：想找人一起看速度与激情7"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/id_compaigner_photograph_scrollview_line2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/id_compaigner_photograph_scrollview_ll3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/id_compaigner_photograph_scrollview_ll3_titleName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="分类"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/id_compaigner_photograph_scrollview_ll3_spinner"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:entries="@array/compaign_type"
+                    android:gravity="center"
+                    android:prompt="@string/spin_prompt_compaigntype" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/id_compaigner_photograph_scrollview_line3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/id_compaigner_photograph_scrollview_ll4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/id_compaigner_photograph_scrollview_ll4_placeName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="地点"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/id_compaigner_photograph_scrollview_ll4_place"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="示例：科大"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            
+            <View
+                android:id="@+id/id_compaigner_photograph_scrollview_line4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/id_compaigner_photograph_scrollview_ll5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/id_compaigner_photograph_scrollview_ll5_priceName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="费用"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/id_compaigner_photograph_scrollview_ll5_price"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="示例：100"
+                    android:textSize="15sp"
+                    android:numeric="integer" />
+
+                <TextView
+                    android:id="@+id/id_compaigner_photograph_scrollview_ll5_originalpriceUnit"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="元"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/id_compaigner_photograph_scrollview_line6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:background="#e5e5e5" >
+                
+                <TextView 
+                    android:id="@+id/id_compaigner_photograph_scrollview_line6_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="详细描述"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"/>
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/id_compaigner_photograph_scrollview_ll7"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <!-- <TextView
+                    android:id="@+id/id_compaigner_photograph_scrollview_ll7_detailName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="描述"
+                    android:textSize="18sp" /> -->
+
+                <EditText
+                    android:id="@+id/id_compaigner_photograph_scrollview_ll7_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@null"
+                    android:hint="活动时间、活动人数、具体要求等"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            
+            <!-- <Button 
+                android:id="@+id/id_compaigner_photograph_scrollview_submmit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="提交发布"
+                android:textSize="15sp"/> -->
+        </LinearLayout>
+    </ScrollView>
+    
+    <Button
+        android:id="@+id/id_compaigner_photograph_scrollview_submmit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red"
+        android:text="提交发布"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

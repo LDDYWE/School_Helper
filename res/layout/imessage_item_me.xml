@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="80dip"
+    android:paddingRight="8dip"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip">
+        
+    <com.zb.secondary_market.custom.CircularImageView
+        android:id="@+id/chatlist_image_me"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginLeft="10dip"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/chatlist_text_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/chatlist_image_me"
+        android:layout_toLeftOf="@id/chatlist_image_me"
+        android:background="@drawable/corner_shape13"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:text="会忽悠了就嗲是基地啊手機过" />
+
+</RelativeLayout>

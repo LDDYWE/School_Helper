@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_listview"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/id_school_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/id_school_ll1_title"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="今天有乐视超级手机的发布会"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_school_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/id_school_ll2_content"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="这是具体的细节以及图片、视频等等信息这是具体的细节以及图片、视频等等信息"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/id_school_ll2_datetime"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:gravity="right"
+            android:text="2015-4-15"
+            android:textColor="@color/gray"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <!--
+    <LinearLayout
+        android:id="@+id/id_school_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/corner_shape2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/id_school_ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="今天有乐视超级手机的发布会"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/id_school_ll_brief"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="3"
+            android:text="这是具体的细节以及图片、视频等等信息"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/id_school_ll_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/id_school_ll_ll_author"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="ABCDEF"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/id_school_ll_ll_datetime"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2015-4-14"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+    -->
+
+</LinearLayout>

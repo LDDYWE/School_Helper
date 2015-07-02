@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pull_to_refresh_pull_u2d_label">下拉刷新&#8230;</string>
+    <string name="pull_to_refresh_release_u2d_label">松开有惊喜&#8230;</string>
+    <string name="pull_to_refresh_refreshing_u2d_label">正在为您刷新&#8230;</string>
+    <string name="pull_to_refresh_pull_d2u_label">上拉加载更多&#8230;</string>
+    <string name="pull_to_refresh_release_d2u_label">松开有惊喜&#8230;</string>
+    <string name="pull_to_refresh_refreshing_d2u_label">正在为您加载&#8230;</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh&#8230;</string>
+</resources>

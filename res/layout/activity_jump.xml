@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2B2B2B" >
+    
+    <com.zb.secondary_market.custom.TitleView 
+        android:id="@+id/id_jump_titleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <!-- <Button 
+        android:id="@+id/id_jump_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳蚤市场"/>
+    
+    <Button 
+        android:id="@+id/id_jump_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="校园交友"/>
+    
+    <Button 
+        android:id="@+id/id_jump_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="工作信息"/> -->
+        
+        <GridView 
+            android:id="@+id/id_jump_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:layout_margin="10dp"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:scrollbars="none"/>
+</LinearLayout>

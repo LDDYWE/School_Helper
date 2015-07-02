@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <com.zb.secondary_market.custom.TitleView
+        android:id="@+id/friend_photograph_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/id_friend_photograph_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_below="@id/friend_photograph_title"
+        android:layout_above="@+id/id_friend_photograph_scrollview_submmit_btn">
+
+        <LinearLayout
+            android:id="@+id/id_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/id_friend_photograph_scrollview_ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#CCCCCC"
+                android:orientation="vertical" >
+
+                <GridView
+                    android:id="@+id/id_friend_photograph_scrollview_ll1_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="3dp"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:layout_margin="2dp"
+                    android:verticalSpacing="5dp" >
+                </GridView>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/id_friend_photograph_scrollview_line1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/id_friend_photograph_scrollview_ll2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/id_friend_photograph_scrollview_ll2_titleName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="标题"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/id_friend_photograph_scrollview_ll2_title"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:hint="信息标题，最多40个字"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/id_friend_photograph_scrollview_line2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/id_friend_photograph_scrollview_ll3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/id_friend_photograph_scrollview_ll3_titleName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="性别"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/id_friend_photograph_scrollview_ll3_spinner_gender"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:entries="@array/gender_type"
+                    android:gravity="center"
+                    android:prompt="@string/spin_prompt_gendertype" />
+            </LinearLayout>
+            
+            <!-- <LinearLayout
+                android:id="@+id/id_friend_photograph_scrollview_ll333"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/id_friend_photograph_scrollview_ll333_titleName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="认证"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/id_friend_photograph_scrollview_ll333_spinner_gender"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:entries="@array/gender_type"
+                    android:gravity="center"
+                    android:prompt="@string/spin_prompt_gendertype" />
+            </LinearLayout> -->
+
+            <View
+                android:id="@+id/id_friend_photograph_scrollview_line3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#CCCCCC" />
+
+            <!-- <LinearLayout
+                android:id="@+id/id_friend_photograph_scrollview_ll4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/id_friend_photograph_scrollview_ll4_schoolName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="学校"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/id_friend_photograph_scrollview_ll4_school"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="中国科学技术大学"
+                    android:textSize="15sp" />
+            </LinearLayout> -->
+
+            <!-- <View
+                android:id="@+id/id_friend_photograph_scrollview_line00"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#CCCCCC" /> -->
+            
+            <LinearLayout
+                android:id="@+id/id_friend_photograph_scrollview_ll00"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/id_friend_photograph_scrollview_ll00_hometownName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="家乡"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/id_friend_photograph_scrollview_ll00_hometown"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="安徽/合肥"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/id_friend_photograph_scrollview_line000"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#e5e5e5" />
+            
+            <LinearLayout
+                android:id="@+id/id_friend_photograph_scrollview_ll000"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/id_friend_photograph_scrollview_ll000_hobbyName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="兴趣"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/id_friend_photograph_scrollview_ll000_hobby"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="篮球/台球/唱歌/跳舞"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            
+            <View
+                android:id="@+id/id_friend_photograph_scrollview_line4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#CCCCCC" />
+
+            <LinearLayout
+                android:id="@+id/id_friend_photograph_scrollview_ll5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/id_friend_photograph_scrollview_ll5_declarationName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="宣言"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/id_friend_photograph_scrollview_ll5_declaration"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="我要找对象！"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/id_friend_photograph_scrollview_line6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:background="#e5e5e5" >
+                
+                <TextView 
+                    android:id="@+id/id_psecondary_photograph_scrollview_line6_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="详细描述"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"/>
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/id_friend_photograph_scrollview_ll7"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <!-- <TextView
+                    android:id="@+id/id_friend_photograph_scrollview_ll7_detailName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="描述"
+                    android:textSize="18sp" /> -->
+
+                <EditText
+                    android:id="@+id/id_friend_photograph_scrollview_ll7_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@null"
+                    android:hint="更多"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            
+            <!-- <Button 
+                android:id="@+id/id_friend_photograph_scrollview_submmit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="提交发布"
+                android:textSize="15sp"/> -->
+        </LinearLayout>
+    </ScrollView>
+    
+    <Button
+        android:id="@+id/id_friend_photograph_scrollview_submmit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red"
+        android:text="提交发布"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>
